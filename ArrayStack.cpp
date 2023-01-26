@@ -43,7 +43,6 @@ int pop(Stack* stack){
 }
 
 int main(void){
-	int i = 0;
 	Stack* stack = NULL;
 	create_Stack(&stack, 10);
 	
@@ -51,10 +50,8 @@ int main(void){
 	push(stack, 6);
 	push(stack, 9);
 	push(stack, 15);
-	
-	printf("maxSize: %d\n\n", stack->size);
-	
-	for(i = 0; i < 4; i++){
+
+	for(int i = 0; i < 4; i++){
 		printf("%d\n", pop(stack));
 	}
 	
