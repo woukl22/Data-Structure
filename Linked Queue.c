@@ -80,7 +80,7 @@ int main(void){
 		
 	while(!isEmpty(queue)){
 		printf("dequeue: %d, ", dequeue(queue));
-		printf("front: %d, rear: %d\n", queue->front ? queue->front->data : queue->front, queue->rear ? queue->rear->data : queue->rear);
+		printf("front: %d, rear: %d\n", queue->front ? queue->front->data : 0, queue->rear ? queue->rear->data : 0);
 	}
 	
 	destroy_Queue(queue);
