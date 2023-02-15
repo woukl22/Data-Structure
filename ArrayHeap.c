@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 15
+#define MAX 5
 
 typedef struct _node{
 	int data;
@@ -26,7 +26,7 @@ void destroy_Node(Node* node){
 
 Heap* create_Heap(int max){
 	Heap* heap = (Heap*)malloc(sizeof(Heap));
-	heap->Nodes = (Node*)malloc(sizeof(Node)*max);
+	heap->Nodes = (Node*)malloc(sizeof(Node)*(max+1));
 	heap->size = 0;
 	heap->max = max;
 	return heap;
